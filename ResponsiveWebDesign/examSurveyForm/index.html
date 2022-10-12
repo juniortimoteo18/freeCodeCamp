@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank You to spend your answer this survey</p>
+
+    <form id="survey-form">
+
+    <fieldset>
+      <label id="name-label">Name<input id="name" type="text" placeholder="Input your name" required/></label>
+      <label id="email-label">Email<input id="email" type="email" placeholder="Input your email" required /></label>
+      <label id="number-label">Age<input id="number" type="number" placeholder="Input your age" min="5" max="120" /></label>
+    </fieldset>
+
+    <fieldset>
+      <label for="dropdown">Which type of vehicle do you prefer ?</label>
+      <select id="dropdown">
+        <option>Cars</option>
+        <option>Bikes</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label> Based on your opinion whats is the best player?
+      <label><input type="radio" name="BestPlayer" value="cr7"/>Cristiano Ronaldo<label>
+      <label><input type="radio" name="BestPlayer" value="m10"/> Leonel Messi</label>
+      </label>
+
+      <label> Which food is the best for you?
+      <label><input type="checkbox" value="pizza"/> Pizza</label>
+      <label><input type="checkbox" value="burger"/> Burger</label>
+      <label><input type="checkbox" value="hotDog"/> Hot Dog</label>
+      <label><input type="checkbox" value="friedChicken"/> Fried Chicken</label>
+      </label>
+
+      <label>Tell us about this survey:
+        <textarea name="comment" placeholder="Leave your comment" rows="3" cols="30"></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
