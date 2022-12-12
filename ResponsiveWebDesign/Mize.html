@@ -1,0 +1,179 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Qual é a utilidade prática dos serviços SSH e SFTP?
+Acesso e transferência de ficheiros de forma remota.
+-Indique a estrutura de um documento HTML e explique o conteúdo de cada uma das componentes.
+<html> </html> - estrutura geral do documento
+<head></head> - cabeçalho
+<body></body> - conteúdo visível para o utilizador
+Caso opte-se em utilizar a tag head, num documento HTML, qual 
+é a tag obrigatória que deve incorporar o head?
+- <title> </title>
+Em que consiste uma aplicação web
+- Combinação de HTML, URL e HTTP.
+Explique a utilidade de cada um dos artefactos que compõem 
+uma aplicação web?
+- HTML -linguagem de hipertexto; 
+URL -mecanismo de identificação e padronização e 
+HTTP – protocolo de comunicação entre o cliente e o servidor Web
+Qual é a utilidade prática do CSS?
+- Formatação de páginas Web para além das limitações impostas pelo HTML
+Explique cada uma das formas existentes para a inclusão do CSS num documento HTML.
+- inline (directamento no tag), head (no head e é aplicável para toda a página) or external file (no ficheiro externo pode ser usado por todos HTML que o invocam).
+Qual é a utilidade do Javascript?
+-Dinamização de páginas Web do lado do cliente.
+Em que consiste o (D) HTML?
+-  Combinação do HTML, Javascript e CSS.
+Explique o mecanismo de funcionamento de envio de parâmetros 
+do cliente para o servidor no contexto de aplicações web.
+- HTML_forms é o mecanismo de captura de dados e o 
+HTTP_parameters é o mecanismo de envio dos dados que poder 
+seguir pelo método GET ou POST 
+Qual é a utilidade prática de um servidor proxy?
+- Intermediação no acesso à Internet com objectivos de 
+minimizar a taxa de download e upload duma LAN a Internet
+Para que servem os cookies e de que forma podem ser aproveitados?
+-  Controlar os acessos ao serviço Web. Podem ser utilizados por exemplo, 
+para melhorar a experiência do utilizador, personalizado a página em 
+função dos gostos do utilizador
+Explique o funcionamento do JSP
+- Necessita de um servidor aplicacional dedicado, por exemplo, 
+o apache tomcat, que compila o código e gera a resposta no 
+formato HTML, por forma a ser interpretado pelo browser
+Em que consiste o serviço de e-mail?
+- Combinação de um agente utilizador, um servidor de correio 
+e a implementação do SMTP e o POP3 ou IMAP.
+Quais são os protocolos mínimos necessários para a 
+implementação do serviço de e-mail
+POP3 ou IMAP e SMTP
+Explique a utilidade de cada um dos artefactos que compõem o 
+serviço de e-mail.
+- Agente utilizador é a interface que permite compor e ler 
+mensagens, o servidor de correio implementa a caixa de correio 
+e a fila de saída das mensagens, o protocolo SMTP permite o 
+envio de mensagens e o POP3 ou IMAP permitem ter acesso aos 
+e-mail recebidos.
+Qual é a utilidade do XML?
+- Transmissão, armazenamento, configuração e 
+transformação.
+Que aspectos de segurança devem ser tomados quando se 
+desenvolve aplicações web?
+- É preciso garantir as seguintes propriedades
+confidencialidade, integridade e disponibilidade.
+Imagine que seja convidado para seleccionar e instalar um 
+sistema de gestão de conteúdos (LMS), descreva os passos que 
+seguiria.
+Pesquisar as opções existentes, elaborar critérios de avaliação das 
+soluções, seleccionar a opção que melhor responde aos critérios de 
+avaliação e implementar a solução seleccinada.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mize</title>
+</head>
+<body>
+
+	<label>Nome:</label><input id="nome" type="text"><br>
+	<label>Apelido</label><input id="apelido" type="text"><br>
+	<button onclick="alerta()">Saudacao</button>
+	<script type="text/javascript">
+		function change(){
+ document.getElementById("ex1").style.color = "green";
+ document.getElementById("ex2").style.color = "green";
+ document.getElementById("ex3").style.color = "green";
+ document.getElementById("ex4").style.color = "green";
+ document.getElementById("ex5").style.color = "green";
+ }
+		function alerta(){
+			alert("Ola"+' '+document.getElementById('nome').value+' '+document.getElementById('apelido').value);
+			//document.body.style.color = "green";
+ 			return false;
+ 		}
+
+ 		function calcula() {
+ var x;
+ 
+ let nota = 
+parseInt(document.getElementById("nota").value);
+ 
+if(nota>=0 && nota <10){
+ document.getElementById('aproveitamento').value 
+= "Insuficiente";
+ }else if(nota>=10 && nota<14){ 
+ document.getElementById('aproveitamento').value 
+= "Bom";
+ }else if(nota>=14){
+ document.getElementById('aproveitamento').value 
+= "Muito Bom";
+ }
+ }
+	</script>
+</body>
+</html>
